@@ -1,0 +1,20 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f172a; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; color: #ffffff; }
+
+.error-container { text-align: center; background: #1e293b; padding: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); border: 1px solid #334155; max-width: 500px; width: 90%; }
+
+.icon-lost, .icon-lock { font-size: 4rem; margin-bottom: 15px; }
+
+h1 { font-size: 1.8rem; margin-bottom: 10px; color: #e2e8f0; }
+
+p { font-size: 1rem; color: #cbd5e1; margin-bottom: 25px; line-height: 1.5; }
+
+.btn-back { display: inline-block; background: #3b82f6; color: #fff; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: 0.2s ease; }
+
+.btn-back:hover { background: #2563eb; }
+
+.error-404 { border-top: 5px solid #3b82f6; }
+.error-404 .icon-lost { color: #3b82f6; }
+.error-403 { border-top: 5px solid #ef4444; }
+.error-403 .icon-lock { color: #ef4444; }
+
+@media (max-width: 480px) { body { padding: 15px; } .error-container { padding: 25px 20px; width: 100%; box-shadow: none; border: 1px solid #334155; } .icon-lost, .icon-lock { font-size: 3.2rem; } h1 { font-size: 1.5rem; } p { font-size: 0.95rem; margin-bottom: 20px; } .btn-back { display: block; width: 100%; padding: 14px; font-size: 1rem; } }

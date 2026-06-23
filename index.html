@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Litzia´s Tanda System</title>
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+
+<body>
+
+<header class="topbar">
+    <h1>Litzia´s Tanda System</h1>
+
+    <nav class="navbar-right">
+        <a href="#" id="logoutBtn" class="navbar-link danger">Logout</a>
+    </nav>
+</header>
+
+<div id="loading" class="loading">Loading information...</div>
+
+<main class="container">
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Client</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <section class="form-container">
+        <input id="client" placeholder="Client">
+        <input id="amount" placeholder="Amount" type="text">
+
+        <input id="day" type="number" placeholder="Day (DD)" min="1" max="31">
+        <input id="month" type="number" placeholder="Month (MM)" min="1" max="12">
+        <input id="year" type="number" placeholder="Year (AAAA)" min="2026" max="2035">
+
+        <button id="btn-save">Save</button>
+    </section>
+
+</main>
+
+<script src="js/index.js?v=12345"></script>
+
+</body>
+</html>

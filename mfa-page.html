@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Verification | Litzia´s Tanda</title>
+    <link rel="stylesheet" href="/css/otp.css">
+</head>
+<body>
+
+<div class="otp-container">
+    <div class="card"> 
+        <h3>Security verification</h3>
+        <p class="text-muted">
+            Please enter the verification code sent to your device.
+        </p>
+
+        <form id="otpForm" novalidate>
+            <input type="text"
+                   id="otpCode"
+                   name="code"
+                   class="otp-input" 
+                   placeholder="000000"
+                   inputmode="numeric"
+                   pattern="[0-9]{6}"
+                   maxlength="6"
+                   required
+                   autocomplete="off">
+
+            <button type="submit" class="btn-primary">Verify Code</button>
+        </form>
+
+        <div class="footer-container"> 
+            <a href="login.html" class="back-link">Go back login</a>
+        </div>
+    </div>
+</div>
+
+<script src="/js/otp.js"></script>
+
+</body>
+</html>

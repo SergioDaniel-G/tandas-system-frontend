@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access to the system | Litzia´s Tanda</title>
+    <link rel="stylesheet" href="css/access.css?v=999">
+    <link rel="icon" href="data:,">
+</head>
+
+<body class="login-page">
+
+<div class="login-card">
+
+    <header class="login-header">
+        <div class="logo-circle">LT</div>
+        <h1>Litzia´s <b>Tanda</b></h1>
+        <p>Control system</p>
+    </header>
+
+    <form class="login-form" id="loginForm" novalidate>
+
+        <div class="form-group">
+            <label for="username">Email:</label>
+            <input id="username" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <div class="password-wrapper">
+                <input id="password"
+                       name="password"
+                       type="password"
+                       maxlength="12"
+                       autocomplete="current-password"
+                       required>
+                <button type="button" id="togglePassword" class="eye-btn">👁</button>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-login">Login</button>
+
+        <div class="form-footer">
+            <a href="forgot_password.html" class="link-muted">Forgot your password?</a>
+            <p class="register-text">
+                New here? <a href="register.html">Sign up here</a>
+            </p>
+        </div>
+
+    </form>
+</div>
+
+<footer class="footer-signature">
+    <p>Developed and created by: <b>Litzia´s Tanda</b></p>
+</footer>
+
+<script src="js/login.js?v=12345"></script>
+</body>
+</html>

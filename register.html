@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users register | Litzia´s Tanda</title>
+    <link rel="stylesheet" href="/css/access.css?v=999">
+</head>
+
+<body class="login-page">
+<div class="login-card">
+
+    <header class="login-header">
+        <div class="logo-circle">LT</div>
+        <h1>Create <b>Account</b></h1>
+        <p>Control System</p>
+    </header>
+
+    <form id="registerForm" class="login-form" novalidate>
+
+        <div class="form-group">
+            <label>Name:</label>
+            <input id="name" name="name" type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Lastname:</label>
+            <input id="lastname" name="lastname" type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Phone:</label>
+            <input id="mobileNumber" name="mobileNumber" type="tel" maxlength="10">
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input id="email" name="email" type="email">
+        </div>
+
+        <div class="form-group">
+            <label>Password:</label>
+            <div class="password-wrapper">
+                <input id="password" name="password" type="password" maxlength="12">
+                <button type="button" id="togglePassword" class="eye-btn">👁</button>
+            </div>
+        </div>
+
+        <div id="recaptcha-container"></div>
+
+        <button type="submit" class="btn-login">Register</button>
+
+        <div class="form-footer">
+            <a href="/login.html" class="link-muted">Already have account?</a>
+        </div>
+
+    </form>
+</div>
+
+<script src="/js/register.js?v=88888"></script>
+</body>
+</html>
