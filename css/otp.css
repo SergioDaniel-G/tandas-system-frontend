@@ -10,8 +10,9 @@ body { background-color: #0f172a; display: flex; align-items: center; justify-co
 .otp-input { display: block; width: 100%; height: 50px; box-sizing: border-box; text-align: center; background: #334155; color: #ffffff; border: 1px solid #475569; border-radius: 8px; letter-spacing: 8px; font-size: 22px; font-weight: bold; outline: none; transition: border-color 0.2s; }
 .otp-input:focus { border-color: #3b82f6; }
 
-.btn-primary { display: block; width: 100%; height: 48px; margin-top: 20px; background: #3b82f6; border: none; color: white; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.btn-primary { display: block; width: 100%; height: 48px; margin-top: 20px; background: #3b82f6; border: none; color: white; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background 0.2s, background-color 0.2s; }
 .btn-primary:hover { background: #2563eb; }
+.btn-primary:disabled { cursor: not-allowed; }
 
 .footer-container { margin-top: 20px; }
 
@@ -21,6 +22,12 @@ body { background-color: #0f172a; display: flex; align-items: center; justify-co
 .alert { font-size: 14px; border-radius: 8px; padding: 12px; margin-bottom: 15px; }
 .alert-danger { background: #1e293b; color: white; border: 1px solid #ef4444; }
 .alert-warning { background: #1e293b; color: white; border: 1px solid #f59e0b; }
+
+.resend-wrapper { margin-top: 20px; text-align: center; font-size: 14px; color: #94a3b8; }
+.resend-wrapper strong { color: #f59e0b; font-family: monospace; font-size: 15px; }
+
+.resend-link { color: #3b82f6; text-decoration: none; font-weight: bold; transition: color 0.2s, text-decoration 0.2s; }
+.resend-link:hover { color: #60a5fa; text-decoration: underline; }
 
 @media (max-width: 480px) {
     body { padding: 15px; }
